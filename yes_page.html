@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! 💖</title>
+    <style>
+        :root {
+            --primary-color: #ff4d6d;
+        }
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffccd5, #ff758f);
+            text-align: center;
+            font-family: 'Comic Neue', cursive;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 90%;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+        }
+
+        .love-gif {
+            width: min(300px, 90%);
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: white;
+            animation: confetti 3s linear infinite;
+        }
+
+        @keyframes confetti {
+            0% { transform: translateY(-100vh) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .love-gif {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Yay! You said YES! 💖<br>Now we are officially Valentine! 🎉</h1>
+        <img src="https://media.tenor.com/nr1UaeCCOJ4AAAAi/i-love-you.gif" 
+             alt="I Love You GIF" 
+             class="love-gif">
+        
+        <!-- Efek confetti -->
+        <div class="confetti" style="left:10%"></div>
+        <div class="confetti" style="left:30%"></div>
+        <div class="confetti" style="left:50%"></div>
+        <div class="confetti" style="left:70%"></div>
+        <div class="confetti" style="left:90%"></div>
+    </div>
+</body>
+</html>
